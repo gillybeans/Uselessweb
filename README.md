@@ -1,2 +1,2 @@
-# uselessweb
-Assignment in Javascript
+# The Useless Web
+Assignment in JavaScript!
