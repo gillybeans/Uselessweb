@@ -1,0 +1,2 @@
+# uselessweb
+Assignment in Javascript
