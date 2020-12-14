@@ -1,0 +1,28 @@
+body {
+    background-color: white;
+    margin: 50px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+#contentContainer {
+    max-width: 670px;
+    height: 400px;
+    margin: auto;
+    border: 8px rgb(36, 49, 90) solid;
+    border-top: none;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: #DFF2FF;
+    border-radius: 0px 0px 88px 88px;
+}
+
+#fish {
+    position: relative;
+    left: 30px;
+    top: 30px;
+    transition: left .5s ease-in, top .5s ease-in;
+}
