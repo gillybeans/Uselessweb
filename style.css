@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: white;
+    background-color: rgb(220, 243, 222);
     margin: 30px;
     margin-top: 10px;
 }
@@ -20,9 +20,9 @@ h1 {
 }
 
 #contentContainer {
-    max-width: 960px;
+    max-width: 980px;
     margin: auto;
-    height: 460px;
+    height: 500px;
     border: 8px rgb(44, 119, 189) solid;
     border-top: none;
     overflow: hidden;
@@ -37,23 +37,28 @@ h1 {
     left: 50px;
     top: 50px;
     transition: left .5s ease-in, top .5s ease-in;
-    transform: scaleX(-1);
+    /*transform: scaleX(-1);*/
 }
+
 
 
 /*********** MEDIA *********/
 
 @media only screen
-        and (max-width: 380px)
+        and (max-width: 420px)
 
     {
 
 #contentContainer {
-    height: 430px;
+    height: 420px;
 }
 
 #fish {
     width: 80px;
+}
+
+h1 {
+    margin-top: 2rem;
 }
 
 }
