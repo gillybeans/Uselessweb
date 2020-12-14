@@ -55,3 +55,25 @@ function zoom(event) {
   let scale = 1;
   const el = document.querySelector("#fish");
   el.onwheel = zoom;
+
+
+
+
+
+  /*var direction = "",
+    oldx = 0,
+    mousemovemethod = function (e) {
+    
+        if (e.pageX < oldx) {
+            direction = "left"
+        } else if (e.pageX > oldx) {
+            direction = "right"
+        }
+        
+        document.body.innerHTML = direction;
+        
+        oldx = e.pageX;
+        
+}
+
+document.addEventListener('mousemove', mousemovemethod);*/
