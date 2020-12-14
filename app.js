@@ -1,12 +1,12 @@
-var theFish = document.querySelector("#fish");
-var container = document.querySelector("#contentContainer");
+let theFish = document.querySelector("#fish");
+let container = document.querySelector("#contentContainer");
  
 container.addEventListener("click", getClickPosition, false);
  
 function getClickPosition(e) {
-    var parentPosition = getPosition(e.currentTarget);
-    var xPosition = e.clientX - parentPosition.x - (theFish.clientWidth / 2);
-    var yPosition = e.clientY - parentPosition.y - (theFish.clientHeight / 2);
+    let parentPosition = getPosition(e.currentTarget);
+    let xPosition = e.clientX - parentPosition.x - (theFish.clientWidth / 2);
+    let yPosition = e.clientY - parentPosition.y - (theFish.clientHeight / 2);
      
     theFish.style.left = xPosition + "px";
     theFish.style.top = yPosition + "px";
@@ -14,14 +14,14 @@ function getClickPosition(e) {
  
 // function to get the element's exact position
 function getPosition(el) {
-  var xPos = 0;
-  var yPos = 0;
+  let xPos = 0;
+  let yPos = 0;
  
   while (el) {
     if (el.tagName == "BODY") {
       // browser quirks with body/window/document and page scroll
-      var xScroll = el.scrollLeft || document.documentElement.scrollLeft;
-      var yScroll = el.scrollTop || document.documentElement.scrollTop;
+      let xScroll = el.scrollLeft || document.documentElement.scrollLeft;
+      let yScroll = el.scrollTop || document.documentElement.scrollTop;
  
       xPos += (el.offsetLeft - xScroll + el.clientLeft);
       yPos += (el.offsetTop - yScroll + el.clientTop);
@@ -38,6 +38,8 @@ function getPosition(el) {
     y: yPos
   };
 }
+
+
 
 /****** ZOOM ZOOM ********/
 function zoom(event) {
@@ -59,21 +61,3 @@ function zoom(event) {
 
 
 
-
-  /*var direction = "",
-    oldx = 0,
-    mousemovemethod = function (e) {
-    
-        if (e.pageX < oldx) {
-            direction = "left"
-        } else if (e.pageX > oldx) {
-            direction = "right"
-        }
-        
-        document.body.innerHTML = direction;
-        
-        oldx = e.pageX;
-        
-}
-
-document.addEventListener('mousemove', mousemovemethod);*/
