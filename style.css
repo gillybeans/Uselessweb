@@ -1,28 +1,59 @@
+@font-face {
+    font-family: 'Dosis';
+    src: url("/fonts/Dosis-Bold.woff") format("woff"),
+         url("/fonts/Dosis-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+
 body {
     background-color: white;
-    margin: 50px;
+    margin: 30px;
+    margin-top: 10px;
 }
 
 h1 {
     text-align: center;
+    margin-top: 50px;
     margin-bottom: 60px;
+    font-family: "Dosis", sans-serif;
 }
 
 #contentContainer {
-    max-width: 670px;
-    height: 400px;
+    max-width: 960px;
     margin: auto;
-    border: 8px rgb(36, 49, 90) solid;
+    height: 460px;
+    border: 8px rgb(44, 119, 189) solid;
     border-top: none;
-    cursor: pointer;
     overflow: hidden;
-    background-color: #DFF2FF;
-    border-radius: 0px 0px 88px 88px;
+    background: linear-gradient(180deg, rgba(140, 216, 240, 0) 0%, #8CD8F0 30%);
+    cursor: pointer;
+    border-radius: 0% 0% 50% 50%;
+    z-index: 990;
 }
 
 #fish {
     position: relative;
-    left: 30px;
-    top: 30px;
+    left: 50px;
+    top: 50px;
     transition: left .5s ease-in, top .5s ease-in;
+    transform: scaleX(-1);
+}
+
+
+/*********** MEDIA *********/
+
+@media only screen
+        and (max-width: 380px)
+
+    {
+
+#contentContainer {
+    height: 430px;
+}
+
+#fish {
+    width: 80px;
+}
+
 }
