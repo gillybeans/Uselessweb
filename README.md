@@ -13,7 +13,7 @@ This is an assignment to create a useless web, a website which serves no purpose
 
 ## Live / Installation
 Clone the repository to your computer
-<pre></pre><code>$ git clone https://github.com/gillybeans/Uselessweb.git </code></pre>
+<pre><code>$ git clone https://github.com/gillybeans/Uselessweb.git </code></pre>
 Or just go directly to the live version <a href="https://splish-splash.netlify.app/">HERE</a>
 
 ## Created by
